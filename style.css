@@ -1,0 +1,342 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+  }
+  body{
+      margin: 0;
+      font-family: arial;
+      background:#fff;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #333;
+      
+  }
+  img{
+      max-width: 100%;
+
+  }
+  a{
+      transition: all 0.3s ease-in-out;
+  }
+  .header{
+      padding: 15px 10px;
+      background: #fc0404;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+  }
+  .logo{
+      width: 50px;
+      display: block;
+  }
+  .header-right-list ul{
+      margin:0;
+      padding: 0;
+      list-style: none;
+  }
+  .header-right-list ul li{
+      display: inline-block;
+      margin-left: 20px;
+      vertical-align: middle;
+  }
+  .header-right-list ul li a{
+      font-size: 20px;
+      display:block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background:#fff;
+      color: rgb(14, 15, 15);
+      border-radius: 50%;
+  }
+  .header-right-list ul li a:hover{
+      background:#20f70c;
+      color: #fff;
+  }
+  .header-right-list ul li a.nav_icon{
+      background: transparent;
+      color: #050505;
+      font-size: 40px;
+      vertical-align: middle;
+  }
+  
+  .main_menu{
+      position: fixed;
+      right: 0;
+      top:0;
+      padding-top: 82px;
+      z-index: 10;
+      overflow: hidden;
+      height: 0;
+      width: 250px;
+      transition: all 0.3s ease-in-out;
+  }
+  .main_menu.active{
+      height: 100vh;
+  }
+  .main_menu ul{
+      margin:0;
+      padding: 0;
+      list-style: none;
+      position: relative;
+      z-index: 1;
+  }
+  .main_menu ul li a{
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 25px;
+      border-bottom: 1px solid #ff2e2e;
+      color: #000;
+      background-image: linear-gradient(to right,#ff2e2e 100%,#fff);
+      background-size: 0%;
+      background-repeat: no-repeat;
+  }
+  .main_menu ul li a:hover{
+      background-size: 100%;
+      color: #fff;
+  }
+  .menu_bg{
+      background: #fff;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      top:0;
+      left: 50%;
+      margin-left: -5px;
+      transition: all 0.3s ease-in-out;
+  }
+  .main_menu.active .menu_bg{
+      transform: scale(120);
+  }
+  
+  /*Banner*/
+  .banner{
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center center;
+      background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+      color: #fff;
+      text-align: center;
+      text-shadow: 1px 1px 5px #000;
+      font-size: 26px;
+      padding-top: 85px;
+  }
+  .banner h1{
+      font-size: 5vw;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  
+  /*About us Section*/
+  .about_us-section{
+      padding: 100px 0;
+  }
+  .about_us-section figure{
+      padding: 10px;
+    border: 1px solid #ff2e2e;
+  }
+  h2{
+      font-size: 40px;
+      position: relative;
+      margin-bottom: 35px;
+      font-weight: 400;
+      text-align: center;
+  }
+  h2 span{
+      border-bottom: 2px solid #ff2e2e;
+      padding: 0 40px 5px;
+      display: inline-block;
+  }
+  h2.left{
+      text-align: left;
+  }
+  h2.left span{
+      padding-left: 0;
+  }
+  .services-section{
+      padding: 100px 0 40px;
+  }
+  
+  
+ .filter-gallary{
+     padding: 100px;
+ }
+ .portfolio-menu{
+     text-align: center;
+     margin-top: -90px;
+
+ } 
+ .portfolio-menu ul li{
+list-style: none;
+display: inline-block;
+margin: 20px 0px;
+font-size: 20px;
+font-weight: bold;
+padding: 20px 30px;
+font-family:Arial, Helvetica, sans-serif;
+cursor: pointer;
+transition: 0.5s ease;
+}
+.portfolio-menu ul li:hover{
+    color:white;
+    background: #e74c3c;
+    border-radius: 8px;
+}
+li.All{
+    color: white;
+    background: #e74c3c;
+    border-radius: 8px;
+}
+.portfolio-item{
+    width: 100%;
+    padding: 0 4px;
+}
+.portfolio-item .item{
+    width: 360px;
+    height: 360px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 77px;
+}
+.portfolio-item .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: block;
+    overflow: hidden;
+}
+.portfolio-item .item:hover img{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.portfolio-item .item .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(189, 253, 129);
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-item .item:hover .overlay{
+    opacity: 0;
+}
+.portfolio-item .item .overlay h4{
+    color: rgb(5, 5, 5);
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    font-weight: bolder;
+}
+
+  /*Contact Us Section*/
+  .contact_us-section{
+      padding: 100px 0;
+  }
+  input,textarea{
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+      line-height: 30px;
+      font-size: 16px;
+      border-radius: 3px;
+      border:1px solid lightgray;
+      margin-bottom: 40px;
+      resize: none;
+      background: #ece8e8;
+  }
+  textarea{
+      height: 150px;
+  }
+  input[type="submit"]{
+      width: 150px;
+      border:0px;
+      background: #fa0505;
+      color: #fff;
+      font-size: 18px;
+      transition: all 0.3s ease-in-out;
+      margin-bottom: 0;
+      cursor: pointer;
+  }
+  input[type="submit"]:hover{
+      background: #f10606;
+  }
+  
+  /*footer*/
+  .footer{
+      padding: 10px 30px;
+      text-align:center;
+      background:#000;
+      color:#000;
+  }
+  .footer-list ul li{
+      margin: 0 10px;
+  }
+  
+  
+  
+  /*This Media Query use for Mobile Landscape and Portrait View*/
+  @media screen and (max-width: 767px){
+    
+      .header{
+          padding: 10px 0;
+      }
+      .logo{
+          width: 100px;
+      }
+      .header-right-list ul li{
+          margin-left: 5px;
+      }
+      .header-right-list ul li a{
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 16px;
+      }
+      .header-right-list ul li a.nav_icon{
+          font-size: 30px;
+      }
+      .main_menu{
+          padding-top: 50px;
+      }
+      .main_menu ul li a{
+          font-size: 18px;
+      }
+      .banner{
+          font-size: 16px;
+      }
+      .banner h1{
+          font-size: 6vw;
+      }
+      .about_us-section,
+      .contact_us-section{
+          padding: 60px 0;
+      }
+      h2{ font-size: 30px; }
+      h2.left {
+      text-align: center;
+      }
+      h2.left span{
+          padding-left: 40px;
+      }
+      .services-section{
+          padding: 60px 0 20px;
+      }
+      .col-md-12 text-center :hover{
+          background: mediumblue;
+      }
+  
+      
+  }
+  
+  
